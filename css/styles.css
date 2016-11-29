@@ -15,14 +15,39 @@
 @media screen and (min-width: 600px) {
   #main, #side1, #side2 {
     float: left;
-    margin: 20px 5px;
+    margin: 10px 5px;
   }
   #side1 {
-    clear: left;
+    /*clear: left;*/
     width: 48%;
   }
   #side2 {
     float: right;
     width: 48%;
   }
+}
+
+@media screen and (min-width: 1000px) {
+  #main {
+    float: left;
+    width: 70%;
+    height: 100vh;
+    }
+
+  #side1, #side2 {
+    float: right;
+    width: 27%;
+    height: 49vh;
+    font-size: 1.5vh;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }

@@ -1,0 +1,28 @@
+/**:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}*/
+* {
+  box-sizing: border-box;
+}
+
+#main, #side1, #side2 {
+  border:1px dashed #000;
+  margin: 40px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  #main, #side1, #side2 {
+    float: left;
+    margin: 20px 5px;
+  }
+  #side1 {
+    clear: left;
+    width: 48%;
+  }
+  #side2 {
+    float: right;
+    width: 48%;
+  }
+}
